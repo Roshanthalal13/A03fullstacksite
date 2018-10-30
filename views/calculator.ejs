@@ -1,0 +1,38 @@
+<!--Author : Roshan Thalal
+function: This is a html file to create a sample calculator-->
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+   <title> Calculator </title>
+   <link rel="stylesheet" href="calculator.css">
+<% include header.ejs %>
+
+<form class="calculationForm" name="calculator">
+        <input type="text" class="Showcalculation" id="Show" />
+        <div class="calculateRow">
+            <input type="button" class="calculationButton" value="7" onclick="numberInput('7')" />
+            <input type="button" class="calculationButton" value="8" onclick="numberInput('8')" />
+            <input type="button" class="calculationButton" value="9" onclick="numberInput('9')" />
+            <input type="button" class="calculationButton" value="+" onclick="setOperation('add')" />
+        </div>
+        <div class="calculateRow">
+            <input type="button" class="calculationButton" value="4" onclick="numberInput('4')" />
+            <input type="button" class="calculationButton" value="5" onclick="numberInput('5')" />
+            <input type="button" class="calculationButton" value="6" onclick="numberInput('6')" />
+            <input type="button" class="calculationButton" value="-" onclick="setOperation('subtract')" />
+        </div>
+        <div class="calculateRow">
+            <input type="button" class="calculationButton" value="1" onclick="numberInput('1')" />
+            <input type="button" class="calculationButton" value="2" onclick="numberInput('2')" />
+            <input type="button" class="calculationButton" value="3" onclick="numberInput('3')" />
+            <input type="button" class="calculationButton" value="x" onclick="setOperation('multiply')" />
+        </div>
+        <div class="calculateRow"><body style="background-color:blue">
+   
+            <input type="button" class="calculationButton" value="0" onclick="numberInput('0')" />
+            <input type="button" class="calculationButton" value="." onclick="insertdecimal('.')" />
+            <input type="button" class="calculationButton" value="C" onclick="clearDisplay()" />
+            <input type="button" class="calculationButton" value="=" onclick="calculation()" />
+        </div>
+</form>
+<%  include footer.ejs %>
