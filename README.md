@@ -16,3 +16,6 @@ Run node app.js to start the server.  (Hit CTRL-C to stop.)
 
 
 Point your browser to `http://localhost:8081`. 
+
+
+## Checking
