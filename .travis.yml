@@ -2,7 +2,6 @@ language: node_js
 node_js: 
   - lts/*
 
-script: app travis
 
 # language: node_js
 # cache:
