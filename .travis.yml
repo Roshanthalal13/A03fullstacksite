@@ -1,7 +1,32 @@
+#language: node_js
+#node_js: 
+ # - "stable"
+
+#script: app travis
+
 language: node_js
-node_js: 
-  - "stable"
-env: 
-- NODE_ENV="development"
-- NODE_ENV="production";SESSION_SECRET="ABC"
-script: app travis 
+cache:
+  directories:
+    - $HOME/.npm
+node_js:
+  - lts/*
+
+# Trigger a push build on master and greenkeeper branches + PRs build on every branches
+# Avoid double build on PRs (See https://github.com/travis-ci/travis-ci/issues/1147)
+branches:
+  only:
+    - master
+    - /^greenkeeper.*$/
+
+stages:
+  - test
+  - name: release
+    if: branch = master AND type IN (push)
+
+jobs:
+  include:
+    - stage: test
+      script: npm run test
+      after_success: npm run coverage:ci
+    - stage: release
+      script: npm run semantic-release
