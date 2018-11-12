@@ -1,18 +1,25 @@
-# Publicfolio
+PRESENTATION ON STARTING DEVOPS WITH TRAVIS CI
 
-A resume site using Node, Express, BootStrap, EJS
+By.,
 
-## How can you make my repository your own
+HARISH REDDY VAVILALA - INTRODUCTION ON DEVOPS
+MANASA GINJUPALLI - INTRODUCTION ON TRAVIS CI
+AARJAP PIYA - DEVOPS TOOLS AND PHASES
+ROSHAN THALAL - HANDS ON DEMO
+MEGHANA PUTTA - HANDS ON DEMO
 
-Fork into your own cloud account. 
-Clone the site to your machine.
-Open a command window in the new folder.
-Run npm install to install dependencies listed in package.json.
-Run node app.js to start the server.  (Hit CTRL-C to stop.)
+References.,
 
-## How can you make it work on server(do this after you are done copying all the codes)
- npm install
- node app.js
+http://garyclarke.us/technology/the-evolution-of-software-development-practices/
 
+https://www.youtube.com/watch?v=3EyT1i0wYUY&list=PL9ooVrP1hQOE5ZDJJsnEXZ2upwK7aTYiX
 
-Point your browser to `http://localhost:8081`. 
+https://docs.travis-ci.com/user/tutorial/?fbclid=IwAR2hL2SS4kLPmmf-7jnnCoJZrQLz6ppbtsEBlEq1uAMpr9FAM4EEqeTtAU4
+
+https://docs.travis-ci.com/user/deployment/atlas/
+
+https://www.youtube.com/watch?v=Uft5KBimzyk
+
+Repo Link.,
+
+https://github.com/Roshanthalal13/A03fullstacksite(We worked on A03 and hence placed that repo link)
